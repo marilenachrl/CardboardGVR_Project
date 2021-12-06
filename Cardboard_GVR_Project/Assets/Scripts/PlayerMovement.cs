@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 	public Transform vrCamera;			// use this to calculate wheather the player walks or not
-	public float toggleAngle = 30.0f;	// looking down to 30 degrees means the player starts to move
-	public float speed = 3.0f; 			// speed of walking 
+	public float toggleAngle = 20.0f;	// looking down to 30 degrees means the player starts to move
+	public float speed = 5.0f; 			// speed of walking 
 	public bool moveForward;			// when true walk, when false stop 
 
 	private CharacterController cc;		// only gets executed in this class 
@@ -40,7 +40,8 @@ public class PlayerMovement : MonoBehaviour
     	{
 
     		Vector3 forward = vrCamera.TransformDirection(Vector3.forward); 	// get the direction of the camera 
-    		cc.SimpleMove(forward * speed); 									// the character controller will move the camera to the direction caught in the forward attribute and using the speed it will move there
+            Debug.Log(forward);
+    		cc.SimpleMove(forward * speed * Time.deltaTime); 					// the character controller will move the camera to the direction caught in the forward attribute and using the speed it will move there
     																		
 
     	}
