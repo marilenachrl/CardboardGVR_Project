@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 	public Transform vrCamera;			// use this to calculate wheather the player walks or not
-	public float toggleAngle = 20.0f;	// looking down to 30 degrees means the player starts to move
-	public float speed = 5.0f; 			// speed of walking 
+	public float toggleAngle = 15.0f;	// looking down to 30 degrees means the player starts to move
+	public float speed = 600.0f; 			// speed of walking 
 	public bool moveForward;			// when true walk, when false stop 
 
 	private CharacterController cc;		// only gets executed in this class 

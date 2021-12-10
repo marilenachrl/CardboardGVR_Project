@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerTeleport : MonoBehaviour
+public class PlayerTeleport : MonoBehaviour	
 {
+	public GameObject Player; 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,13 @@ public class PlayerTeleport : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void pointerClick()
+    {
+
+    	Player.transform.position = new Vector3(transform.position.x, transform.position.y - 27.0f, transform.position.z);
+
+
     }
 }
