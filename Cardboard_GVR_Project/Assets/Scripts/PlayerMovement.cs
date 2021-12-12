@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
     	{
 
     		Vector3 forward = vrCamera.TransformDirection(Vector3.forward); 	// get the direction of the camera 
-            Debug.Log(forward);
     		cc.SimpleMove(forward * speed * Time.deltaTime); 					// the character controller will move the camera to the direction caught in the forward attribute and using the speed it will move there
     																		
 
