@@ -21,9 +21,8 @@ public class PlayerTeleport : MonoBehaviour
 
     public void pointerClick()
     {
+    	Player.transform.position = new Vector3(transform.position.x, transform.position.y - 27.0f, transform.position.z);
 
-    	Player.transform.position = new Vector3(transform.position.x, transform.position.y - 27.0f, transform.position.z + 10.0f);
-
-
+                                        // transforms the players' position to the obejcts being clicked on position                               
     }
 }

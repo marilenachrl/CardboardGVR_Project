@@ -15,12 +15,12 @@ public class TrainMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float newX = transform.position.x - speed; 
-        if (newX < -1583)
+        float newX = transform.position.x - speed;  // move the train
+        if (newX < -1583)                           // until the positions reaches this number
         {
-        	newX = 1533.0f; 
+        	newX = 1533.0f;                           // go back to the initial position 
         }
 
-        transform.position = new Vector3(newX, -1.0f, -1423.5f);
+        transform.position = new Vector3(newX, -1.0f, -1423.5f);   
     }
 }

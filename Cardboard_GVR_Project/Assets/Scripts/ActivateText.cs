@@ -15,11 +15,9 @@ public class ActivateText : MonoBehaviour
 
   	public void onTriggerEnter()
   	{
-  		
   			
   			UIObject.SetActive(true);  // when the Player walks on the information cube the text is set active(display)
   		
-
   	}
 
   	public void onTriggerExit()
